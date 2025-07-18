@@ -46,15 +46,16 @@ test('browser_assert_checked', async ({ client, server }) => {
   });
 
   expect(result).toHaveTextContent(`
-- Ran Playwright code:
+### Ran Playwright code
 \`\`\`js
 // Assert checked checkbox toBeChecked
 await expect(page.locator('#checked-box')).toBeChecked();
 \`\`\`
 
+### Page state
 - Page URL: ${server.PREFIX}
 - Page Title: Test Page
-- Page Snapshot
+- Page Snapshot:
 \`\`\`yaml
 - generic [active] [ref=e1]:
   - checkbox [checked] [ref=e2]
@@ -73,15 +74,16 @@ await expect(page.locator('#checked-box')).toBeChecked();
   });
 
   expect(resultRadio).toHaveTextContent(`
-- Ran Playwright code:
+### Ran Playwright code
 \`\`\`js
 // Assert checked radio button toBeChecked
 await expect(page.locator('#checked-radio')).toBeChecked();
 \`\`\`
 
+### Page state
 - Page URL: ${server.PREFIX}
 - Page Title: Test Page
-- Page Snapshot
+- Page Snapshot:
 \`\`\`yaml
 - generic [active] [ref=e1]:
   - checkbox [checked] [ref=e2]
@@ -215,15 +217,16 @@ test('browser_assert_visible', async ({ client, server }) => {
   });
 
   expect(result).toHaveTextContent(`
-- Ran Playwright code:
+### Ran Playwright code
 \`\`\`js
 // Assert visible div toBeVisible
 await expect(page.getByText('Visible content')).toBeVisible();
 \`\`\`
 
+### Page state
 - Page URL: ${server.PREFIX}
 - Page Title: Test Page
-- Page Snapshot
+- Page Snapshot:
 \`\`\`yaml
 - generic [active] [ref=e1]:
   - generic [ref=e2]: Visible content
@@ -317,15 +320,16 @@ test('browser_assert_contain_text', async ({ client, server }) => {
   });
 
   expect(result).toHaveTextContent(`
-- Ran Playwright code:
+### Ran Playwright code
 \`\`\`js
 // Assert welcome message toContainText "Welcome"
 await expect(page.getByText('Welcome to our website')).toContainText('Welcome');
 \`\`\`
 
+### Page state
 - Page URL: ${server.PREFIX}
 - Page Title: Test Page
-- Page Snapshot
+- Page Snapshot:
 \`\`\`yaml
 - generic [active] [ref=e1]:
   - generic [ref=e2]: Welcome to our website
@@ -421,15 +425,16 @@ test('browser_assert_have_text', async ({ client, server }) => {
   });
 
   expect(result).toHaveTextContent(`
-- Ran Playwright code:
+### Ran Playwright code
 \`\`\`js
 // Assert exact text div toHaveText "Hello World"
 await expect(page.getByText('Hello World')).toHaveText('Hello World');
 \`\`\`
 
+### Page state
 - Page URL: ${server.PREFIX}
 - Page Title: Test Page
-- Page Snapshot
+- Page Snapshot:
 \`\`\`yaml
 - generic [active] [ref=e1]:
   - generic [ref=e2]: Hello World
@@ -528,15 +533,16 @@ test('browser_assert_have_value', async ({ client, server }) => {
   });
 
   expect(result).toHaveTextContent(`
-- Ran Playwright code:
+### Ran Playwright code
 \`\`\`js
 // Assert text input toHaveValue "Hello World"
 await expect(page.locator('#text-input')).toHaveValue('Hello World');
 \`\`\`
 
+### Page state
 - Page URL: ${server.PREFIX}
 - Page Title: Test Page
-- Page Snapshot
+- Page Snapshot:
 \`\`\`yaml
 - generic [active] [ref=e1]:
   - textbox [ref=e2]: Hello World
@@ -625,15 +631,16 @@ test('browser_assert_have_title', async ({ client, server }) => {
   });
 
   expect(result).toHaveTextContent(`
-- Ran Playwright code:
+### Ran Playwright code
 \`\`\`js
 // Assert page toHaveTitle "My Test Page"
 await expect(page).toHaveTitle('My Test Page');
 \`\`\`
 
+### Page state
 - Page URL: ${server.PREFIX}
 - Page Title: My Test Page
-- Page Snapshot
+- Page Snapshot:
 \`\`\`yaml
 - heading "Welcome to the test page" [level=1] [ref=e2]
 \`\`\``);
@@ -702,15 +709,16 @@ test('browser_assert_have_url', async ({ client, server }) => {
   });
 
   expect(result).toHaveTextContent(`
-- Ran Playwright code:
+### Ran Playwright code
 \`\`\`js
 // Assert page toHaveURL "${server.PREFIX}"
 await expect(page).toHaveURL('${server.PREFIX}');
 \`\`\`
 
+### Page state
 - Page URL: ${server.PREFIX}
 - Page Title: Test Page
-- Page Snapshot
+- Page Snapshot:
 \`\`\`yaml
 - heading "URL Test Page" [level=1] [ref=e2]
 \`\`\``);
