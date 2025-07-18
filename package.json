@@ -61,5 +61,9 @@
   },
   "bin": {
     "mcp-server-playwright": "cli.js"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
   }
 }
