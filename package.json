@@ -1,6 +1,6 @@
 {
   "name": "@sotayamashita/playwright-mcp",
-  "version": "0.0.30-fork.2",
+  "version": "0.0.30-fork.1",
   "description": "Playwright Tools for MCP",
   "type": "module",
   "repository": {
