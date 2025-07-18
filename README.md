@@ -369,6 +369,77 @@ http.createServer(async (req, res) => {
 
 <!-- NOTE: This has been generated via update-readme.js -->
 
+- **browser_assert_checked**
+  - Title: Assert checked
+  - Description: Assert that an element is checked or unchecked
+  - Parameters:
+    - `element` (string): Human-readable element description used to obtain permission to interact with the element
+    - `ref` (string): Exact target element reference from the page snapshot
+  - Read-only: **true**
+
+<!-- NOTE: This has been generated via update-readme.js -->
+
+- **browser_assert_contain_text**
+  - Title: Assert contain text
+  - Description: Assert that an element contains specific text
+  - Parameters:
+    - `element` (string): Human-readable element description used to obtain permission to interact with the element
+    - `ref` (string): Exact target element reference from the page snapshot
+    - `expected` (string): Expected text substring
+  - Read-only: **true**
+
+<!-- NOTE: This has been generated via update-readme.js -->
+
+- **browser_assert_have_text**
+  - Title: Assert have text
+  - Description: Assert that an element has exact text
+  - Parameters:
+    - `element` (string): Human-readable element description used to obtain permission to interact with the element
+    - `ref` (string): Exact target element reference from the page snapshot
+    - `expected` (string): Expected exact text
+  - Read-only: **true**
+
+<!-- NOTE: This has been generated via update-readme.js -->
+
+- **browser_assert_have_title**
+  - Title: Assert have title
+  - Description: Assert that the page has specific title
+  - Parameters:
+    - `expected` (string): Expected page title
+  - Read-only: **true**
+
+<!-- NOTE: This has been generated via update-readme.js -->
+
+- **browser_assert_have_url**
+  - Title: Assert have URL
+  - Description: Assert that the page has specific URL
+  - Parameters:
+    - `expected` (string): Expected page URL
+  - Read-only: **true**
+
+<!-- NOTE: This has been generated via update-readme.js -->
+
+- **browser_assert_have_value**
+  - Title: Assert have value
+  - Description: Assert that an input element has specific value
+  - Parameters:
+    - `element` (string): Human-readable element description used to obtain permission to interact with the element
+    - `ref` (string): Exact target element reference from the page snapshot
+    - `expected` (string): Expected value
+  - Read-only: **true**
+
+<!-- NOTE: This has been generated via update-readme.js -->
+
+- **browser_assert_visible**
+  - Title: Assert visible
+  - Description: Assert that an element is visible
+  - Parameters:
+    - `element` (string): Human-readable element description used to obtain permission to interact with the element
+    - `ref` (string): Exact target element reference from the page snapshot
+  - Read-only: **true**
+
+<!-- NOTE: This has been generated via update-readme.js -->
+
 - **browser_click**
   - Title: Click
   - Description: Perform click on a web page
