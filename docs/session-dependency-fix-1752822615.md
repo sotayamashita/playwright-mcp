@@ -27,7 +27,7 @@ The core problem was a dependency classification error:
 ## Technical Resolution
 
 ### Primary Fix Applied
-**File Modified:** `/Users/samyamashita/Projects/01_work/playwright-mcp/package.json`
+**File Modified:** `package.json`
 
 **Change Details:**
 ```diff
